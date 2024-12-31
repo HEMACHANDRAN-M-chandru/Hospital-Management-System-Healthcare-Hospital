@@ -1,0 +1,59 @@
+.forms {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: auto;
+  align-items: flex-start;
+  padding: 2rem;
+  min-width: 340px;
+}
+
+.loginform-sm {
+  min-width: 24rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  color: rgb(36, 10, 10);
+  font-size: 1rem;
+  box-shadow: 0 10px 15px rgba(247, 7, 7, 0.1);
+  background-color: #c6dbf7;
+}
+
+.twopage {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.widths {
+  width: 100%;
+}
+
+.inputs {
+  border: 2px solid;
+  border-radius: 0.375rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  cursor: text;
+  border: none;
+}
+
+.signup {
+  background-color: #2563eb;
+  color: #ffffff;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  border: none;
+}
+.newlog {
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+}

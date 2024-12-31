@@ -1,0 +1,87 @@
+.contact-container {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+  color: #6b7280;
+}
+.contactimg {
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 0.875rem;
+}
+.spn {
+  color: gold;
+}
+
+.cont {
+  flex-direction: row;
+  margin-bottom: 7rem;
+}
+
+.conimg {
+  width: 100%;
+  max-width: 22.5rem;
+}
+
+.conlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.ouroff {
+  font-weight: 600;
+  font-size: 25px;
+  color: #4b5563;
+}
+
+.offadd {
+  color: #4b5563;
+  font-size: large;
+}
+
+.offmail {
+  color: #0c60d4;
+  font-size: large;
+}
+
+.phoneno {
+  font-size: large;
+}
+
+.offcareer {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.conjob {
+  color: #4b5563;
+  font-size: large;
+}
+
+.conbtn {
+  border: 1px solid #000000;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  transition: all 0.5s;
+}
+
+.conbtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .cont {
+    flex-direction: row;
+  }
+  .conimg {
+    max-width: 360px;
+  }
+}

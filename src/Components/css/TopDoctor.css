@@ -1,0 +1,116 @@
+.topdoc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  color: #111827;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.docpara {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.topdocs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 30px;
+  padding-top: 1.25rem;
+  gap: 35px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.docnavigate {
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.docnavigate:hover {
+  transform: translateY(-10px);
+}
+
+.docimg {
+  background-color: #eef2ff;
+}
+
+.imgdiv {
+  padding: 1rem;
+}
+
+.availableicon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #096b32;
+}
+
+.point {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #48bb78;
+  border-radius: 50%;
+}
+
+.name {
+  color: rgb(3, 3, 3);
+  font-size: large;
+  font-weight: 800;
+}
+
+.spec {
+  color: rgb(54, 51, 54);
+  font-size: large;
+}
+
+.button {
+  background-color: #200aeb;
+  color: whitesmoke;
+  border: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 9999px;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(127, 127, 209);
+  color: white;
+}
+
+.but {
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .topdoc-container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .docpara {
+    width: 35%;
+  }
+
+  .docslice {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

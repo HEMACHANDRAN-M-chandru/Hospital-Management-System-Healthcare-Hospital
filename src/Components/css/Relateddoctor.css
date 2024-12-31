@@ -1,0 +1,117 @@
+.reldoc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  color: #111827;
+}
+
+.title-heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.rel-para {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.reldoc-show {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  padding-top: 1.25rem;
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.rel-navigate {
+  border: 2px solid rgb(90, 140, 155);
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.rel-navigate:hover {
+  transform: translateY(-10px);
+}
+
+.rel-img {
+  background-color: #8f939c6e;
+  max-width: 250px;
+}
+
+.rel-img-div {
+  padding: 10px;
+}
+
+.rel-availableicon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #096b32;
+}
+
+.rel-point {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #3eaa6b;
+  border-radius: 50%;
+}
+
+.rel-name {
+  color: rgb(3, 3, 3);
+  font-size: large;
+  font-weight: 800;
+}
+
+.rel-spec {
+  color: gray;
+  font-size: large;
+  font-weight: 600;
+}
+
+.rel-button {
+  background-color: #200aeb;
+  color: whitesmoke;
+  border: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 9999px;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.rel-button:hover {
+  background-color: rgb(127, 127, 209);
+  color: white;
+}
+.rel-but {
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .reldoc-container {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .rel-para {
+    width: 35%;
+  }
+
+  .reldoc-show {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

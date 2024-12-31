@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #d1d5db;
+  text-decoration: none;
+  background-color: #eff3ff;
+}
+
+.logo {
+  width: 12rem;
+  cursor: pointer;
+  margin-left: 20px;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.linkscontainer {
+  display: none;
+}
+
+.nav {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: large;
+  padding: 0px 20px;
+  padding-left: 15px;
+}
+
+.nav:hover {
+  background-color: black;
+  color: white;
+}
+
+.links {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.hr {
+  border: none;
+  outline: none;
+  height: 0.125rem;
+  background-color: #5f6fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.createacc {
+  background-color: #5f6fff;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 9999px;
+  font-weight: 300;
+  display: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 2.5rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 4;
+}
+
+.group {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.proimg {
+  width: 3.5rem;
+  border-radius: 9999px;
+  margin-right: 1px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.dropicon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  margin-right: 1rem;
+  display: none;
+}
+
+.group:hover .dropdown {
+  display: block;
+}
+
+.dropdown p {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  min-width: 10rem;
+  border-radius: 0.375rem;
+  display: block;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profilelinks p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  background-color: #f0f0f0;
+}
+
+.menuicon {
+  width: 2rem;
+  margin-left: 70px;
+  padding-bottom: 10px;
+}
+
+.menu-one {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-first {
+  position: fixed;
+  width: 0;
+  height: 0;
+}
+
+.menu-second {
+  width: 100%;
+}
+
+.menu-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.5rem;
+}
+
+.menu-cross {
+  width: 1.75rem;
+}
+
+.menu-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.menu-links {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .linkscontainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    font-weight: 500;
+  }
+
+  .createacc {
+    display: block;
+  }
+
+  .menuicon {
+    display: none;
+  }
+
+  .menu-one {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .menu-logo {
+    width: 9rem;
+  }
+}
+
+/* @media (min-width: 740px) {
+  .active p {
+    color: white;
+    background-color: blue;
+  }
+} */
+
+/* .active li {
+  color: white;
+  background-color: blue;
+  width: full;
+  border-radius: 20px;
+  padding: 7px;
+} */

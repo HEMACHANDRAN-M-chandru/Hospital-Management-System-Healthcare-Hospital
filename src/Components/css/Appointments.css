@@ -1,0 +1,213 @@
+.docdetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.docimg {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.app-doc-image {
+  background-color: #194ab4d5;
+}
+
+.docsinfo {
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  background-color: #ffffff;
+  margin-left: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.docspara {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.verified {
+  width: 1.25rem;
+  padding-left: 2px;
+}
+
+.doclist {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  color: #4b5563;
+}
+
+.qualification {
+  font-weight: 500;
+  font-size: large;
+}
+
+.buts {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+  border-radius: 9999px;
+}
+
+.docabouts {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 20px;
+  font-weight: 400;
+  color: #111827;
+  margin-top: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.docotorabout {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.appointfee {
+  color: #6b7280;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.amount {
+  color: black;
+}
+
+.bookingslots {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.dates::-webkit-scrollbar{
+  display: none;
+}
+.datetouch::-webkit-scrollbar{
+  display: none;
+}
+
+.booking {
+  font-size: larger;
+  padding-left: 5px;
+}
+
+.dates {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 1rem;
+}
+
+.selectdate {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  min-width: 4rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.sel {
+  background-color: #575ae2;
+  color: white;
+}
+
+.nonsel {
+  border: 1px solid #e5e7eb;
+  color: inherit;
+}
+
+.days {
+  font-size: 0.875rem;
+  font-weight: 300;
+  flex-shrink: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.datetouch {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 1rem;
+}
+
+.seldate {
+  background-color: #575ae2;
+  color: white;
+}
+
+.unseldate {
+  color: #9ca3af;
+  border: 1px solid #d1d5db; 
+}
+
+.bookbtn {
+  border: 1px solid #3490dc;
+  color: #f3ebeb;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 9999px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #0a54f5;
+}
+
+.bookbtn:hover {
+  background-color: rgb(52, 60, 163);
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .docdetail {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .docimg {
+    max-width: 18rem;
+  }
+
+  .docinfo {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-top: -80px;
+  }
+
+  .bookingslots {
+    margin-left: 18rem;
+    padding-left: 1rem;
+  }
+}
